@@ -13,28 +13,32 @@ import {
 const projects = [
   {
     title: 'Personal Finance Tracker',
-    description: 'Track income, expenses, and trends with charts and filters. Full-stack app with authentication and MongoDB.',
+    description:
+      'Track income, expenses, and trends with charts and filters. Full-stack app with authentication and MongoDB.',
     image: '/assets/personalFinanceImage.png',
     live: '#',
     github: '#',
   },
   {
     title: 'Lumina Dine',
-    description: 'Restaurant management app with elegant table, menu, and order features in a golden-lit theme.',
+    description:
+      'Restaurant management app with elegant table, menu, and order features in a golden-lit theme.',
     image: '/assets/luminaDine.png',
     live: '#',
     github: '#',
   },
   {
     title: 'Ammarce eCommerce Platform',
-    description: 'Modern online store using Next.js and Bootstrap with dynamic product listings, cart functionality and responsive layout.',
+    description:
+      'Modern online store using Next.js and Bootstrap with dynamic product listings, cart functionality, and responsive layout.',
     image: '/assets/ammarceImage.png',
     live: '#',
     github: '#',
   },
   {
     title: 'Treasured Tales',
-    description: 'Responsive memory-sharing app with contributor submissions, image uploads, and a creator dashboard for managing tributes.',
+    description:
+      'Responsive memory-sharing app with contributor submissions, image uploads, and a creator dashboard for managing tributes.',
     image: '/assets/treasuredTales.png',
     live: '#',
     github: '#',
