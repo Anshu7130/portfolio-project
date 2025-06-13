@@ -48,33 +48,20 @@ const projects = [
     github: "#",
     imageHeight: { xs: 150, sm: 200, md: 250, lg: 250, xl: 250 },
   },
-  {
-    title: "Treasured Tales",
-    description:
-      "Responsive memory-sharing app with contributor submissions, image uploads, and a creator dashboard for managing tributes.",
-    image: "/assets/treasuredTales.png",
-    live: "#",
-    github: "#",
-    imageHeight: { xs: 150, sm: 200, md: 250, lg: 250, xl: 250 },
-  },
-  {
-    title: "Treasured Tales",
-    description:
-      "Responsive memory-sharing app with contributor submissions, image uploads, and a creator dashboard for managing tributes.",
-    image: "/assets/treasuredTales.png",
-    live: "#",
-    github: "#",
-    imageHeight: { xs: 150, sm: 200, md: 250, lg: 250, xl: 250 },
-  },
 ];
 
 function Projects() {
   return (
     <Container maxWidth="xl" sx={{ py: 6 }} id="projects">
-      <Typography variant="h4" align="center" gutterBottom sx={{ mb: 4 }}>
+      <Typography variant="h2"  align="center" gutterBottom sx={{ mb: 4 }}>
         Projects
       </Typography>
-      <Grid container spacing={4} justifyContent="center">
+      <Grid
+        container
+        spacing={20}
+        justifyContent="center"
+        alignContent="center"
+      >
         {projects.map((project, index) => (
           <Grid item xs={12} sm={6} md={4} lg={3} xl={3} key={index}>
             <Card
