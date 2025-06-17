@@ -7,8 +7,7 @@ import {
   Paper,
 } from "@mui/material";
 import { motion } from "framer-motion";
-import EmailIcon from "@mui/icons-material/Email"; // 📨 icon for warmth
-import { useSnackbar } from "notistack";
+import EmailIcon from "@mui/icons-material/Email";
 
 export default function Contact() {
   return (
@@ -24,10 +23,9 @@ export default function Contact() {
             p: 4,
             bgcolor: "#FAF0E6",
             borderRadius: "16px",
-            boxShadow: "0 0 15px rgba(184, 115, 51, 0.15)", // ✨ copper glow
+            boxShadow: "0 0 15px rgba(184, 115, 51, 0.15)",
           }}
         >
-          {/* Icon */}
           <EmailIcon
             sx={{
               fontSize: 40,
@@ -38,7 +36,6 @@ export default function Contact() {
             }}
           />
 
-          {/* Heading */}
           <Typography
             variant="h4"
             align="center"
@@ -52,7 +49,6 @@ export default function Contact() {
             Let's Connect
           </Typography>
 
-          {/* Subtitle */}
           <Typography
             variant="subtitle1"
             align="center"
@@ -62,100 +58,69 @@ export default function Contact() {
             below.
           </Typography>
 
-          {/* Form */}
+          {/* ✅ Must be real <form> tag with correct Netlify setup */}
           <form
             name="contact"
             method="POST"
             action="/thank-you.html"
             data-netlify="true"
-            noValidate
             autoComplete="off"
           >
+            {/* Hidden input for Netlify to recognize the form name */}
             <input type="hidden" name="form-name" value="contact" />
-            <Box>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: 0.2 }}
-              >
-                <TextField
-                  name="name"
-                  fullWidth
-                  label="Name"
-                  margin="normal"
-                  required
-                  variant="outlined"
-                  sx={{
-                    bgcolor: "white",
-                    borderRadius: 1,
-                    input: {
-                      paddingY: 1.5,
-                    },
-                  }}
-                />
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: 0.4 }}
-              >
-                <TextField
-                  fullWidth
-                  name="email"
-                  label="Email"
-                  margin="normal"
-                  required
-                  type="email"
-                  variant="outlined"
-                  sx={{
-                    bgcolor: "white",
-                    borderRadius: 1,
-                    input: {
-                      paddingY: 1.5,
-                    },
-                  }}
-                />
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: 0.6 }}
-              >
-                <TextField
-                  fullWidth
-                  name="message"
-                  label="Message"
-                  margin="normal"
-                  multiline
-                  rows={4}
-                  required
-                  variant="outlined"
-                  sx={{
-                    bgcolor: "white",
-                    borderRadius: 1,
-                  }}
-                />
-              </motion.div>
-              <Button
-                type="submit"
-                fullWidth
-                variant="contained"
-                sx={{
-                  mt: 3,
-                  backgroundColor: "#b87333",
-                  color: "#fff",
-                  fontWeight: 600,
-                  paddingY: 1.5,
-                  borderRadius: "8px",
-                  "&:hover": {
-                    backgroundColor: "#a55f2d",
-                    boxShadow: "0 0 12px #b87333",
-                  },
-                }}
-              >
-                Send Message
-              </Button>
-            </Box>
+
+            <TextField
+              name="name"
+              fullWidth
+              label="Name"
+              margin="normal"
+              required
+              variant="outlined"
+              sx={{ bgcolor: "white", borderRadius: 1 }}
+            />
+
+            <TextField
+              name="email"
+              fullWidth
+              label="Email"
+              margin="normal"
+              required
+              type="email"
+              variant="outlined"
+              sx={{ bgcolor: "white", borderRadius: 1 }}
+            />
+
+            <TextField
+              name="message"
+              fullWidth
+              label="Message"
+              margin="normal"
+              multiline
+              rows={4}
+              required
+              variant="outlined"
+              sx={{ bgcolor: "white", borderRadius: 1 }}
+            />
+
+            <Button
+              type="submit"
+              fullWidth
+              variant="contained"
+              sx={{
+                mt: 3,
+                backgroundColor: "#b87333",
+                color: "#fff",
+                fontWeight: 600,
+                paddingY: 1.5,
+                borderRadius: "8px",
+                "&:hover": {
+                  backgroundColor: "#a55f2d",
+                  boxShadow: "0 0 12px #b87333",
+                },
+              }}
+            >
+              Send Message
+            </Button>
           </form>
         </Paper>
       </Container>
