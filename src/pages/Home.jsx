@@ -28,25 +28,28 @@ export default function Home() {
                   width: "300px",
                   height: "300px",
                   objectFit: "cover",
-                  objectPosition: 'top center',
+                  objectPosition: "top center",
                   borderRadius: "50%", // ✅ Rounded corners
                   boxShadow: "0 8px 30px rgba(0, 0, 0, 0.3)", // ✅ Soft shadow
                   backgroundColor: "rgba(255, 255, 255, 0.05)", // ✅ Light transparent bg (optional)
                   padding: "10px", // ✅ Soft inner gap (optional)
-                  transition: 'all 0.3s ease-in-out',
+                  transition: "all 0.3s ease-in-out",
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'translateY(-10px) scale(1.05)';
-                  e.currentTarget.style.boxShadow = '0 12px 40px rgba(0, 0, 0, 0.4)';
+                  e.currentTarget.style.transform =
+                    "translateY(-10px) scale(1.05)";
+                  e.currentTarget.style.boxShadow =
+                    "0 12px 40px rgba(0, 0, 0, 0.4)";
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'translateY(0) scale(1)';
-                  e.currentTarget.style.boxShadow = '0 8px 30px rgba(0, 0, 0, 0.3)';
+                  e.currentTarget.style.transform = "translateY(0) scale(1)";
+                  e.currentTarget.style.boxShadow =
+                    "0 8px 30px rgba(0, 0, 0, 0.3)";
                 }}
               />
             </Box>
           </Grid>
-        
+
           {/* Right Side - Text */}
           <Grid item xs={12} md={6}>
             <Box
@@ -127,7 +130,7 @@ export default function Home() {
                 <Button
                   variant="outlined"
                   size="large"
-                  href="/assets/Anusha-Resume.pdf"
+                  href="/assets/Anusha_Bandarapu_Resume.pdf"
                   target="_blank"
                   sx={{
                     borderColor: "#b87333",
@@ -142,28 +145,12 @@ export default function Home() {
                     },
                   }}
                 >
-                  Download Resume
+                  View Resume
                 </Button>
               </Box>
             </Box>
           </Grid>
         </Grid>
-
-        {/* Scroll Down Arrow */}
-        <Box sx={{ mt: 8, textAlign: "center" }}>
-          <a href="#featured-projects" style={{ textDecoration: "none" }}>
-            <Box
-              sx={{
-                fontSize: "2rem",
-                animation: "bounce 2s infinite",
-                color: "#ffffff",
-                cursor: "pointer",
-              }}
-            >
-              ↓
-            </Box>
-          </a>
-        </Box>
       </motion.div>
     </Container>
   );
