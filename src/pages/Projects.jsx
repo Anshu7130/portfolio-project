@@ -17,8 +17,10 @@ const projects = [
     description:
       "Track income, expenses, and trends with charts and filters. Full-stack app with authentication and MongoDB.",
     image: "/assets/personalFinanceImage.png",
-    live: "#",
-    github: "#",
+    TechStack:
+      "React, Material-UI, Farmer Motion, Node.js, Express.js, MongoDB, JWT",
+    live: "https://personal-finance-frontend-git-main-anshus-projects-9d9cd8f8.vercel.app/",
+    github: "https://github.com/Anshu7130/personal-finance-frontend.git",
     imageHeight: { xs: 150, sm: 200, md: 250, lg: 250, xl: 250 },
   },
   {
@@ -26,26 +28,29 @@ const projects = [
     description:
       "Restaurant management app with elegant table, menu, and order features in a golden-lit theme.",
     image: "/assets/luminaDine.png",
+    TechStack: "React, PHP, Bootstrap, REST API, MySQL, JavaScript,",
     live: "#",
     github: "#",
     imageHeight: { xs: 150, sm: 200, md: 250, lg: 250, xl: 250 },
   },
   {
-    title: "Ammarce eCommerce Platform",
+    title: "News Magazine",
     description:
-      "Modern online store using Next.js and Bootstrap with dynamic product listings, cart functionality, and responsive layout.",
-    image: "/assets/ammarceImage.png",
+      "A responsive news magazine platform showcasing trending articles across tech, politics, and entertainment with a user-friendly layout.",
+    image: "/assets/Newsmaz.png",
+    TechStack: "React, Bootstrap, REST API, JavaScript, HTML5, CSS3",
     live: "#",
-    github: "#",
-    imageHeight: { xs: 200, sm: 300, md: 350, lg: 350, xl: 350 },
+    github: "https://github.com/Anshu7130/NewsMaz.git",
+    imageHeight: { xs: 150, sm: 200, md: 250, lg: 250, xl: 250 },
   },
   {
     title: "Treasured Tales",
     description:
       "Responsive memory-sharing app with contributor submissions, image uploads, and a creator dashboard for managing tributes.",
+    TechStack: "Angular, Angular Material, Node.js, Express.js",
     image: "/assets/treasuredTales.png",
     live: "#",
-    github: "#",
+    github: "https://github.com/Anshu7130/Treasured-Tales.git",
     imageHeight: { xs: 150, sm: 200, md: 250, lg: 250, xl: 250 },
   },
 ];
@@ -53,7 +58,7 @@ const projects = [
 function Projects() {
   return (
     <Container maxWidth="xl" sx={{ py: 6 }} id="projects">
-      <Typography variant="h2"  align="center" gutterBottom sx={{ mb: 4 }}>
+      <Typography variant="h2" align="center" gutterBottom sx={{ mb: 4 }}>
         Projects
       </Typography>
       <Grid
@@ -106,13 +111,23 @@ function Projects() {
                 >
                   {project.title}
                 </Typography>
-                <Typography
-                  variant="body2"
-                  color="text.secondary"
-                  sx={{ wordWrap: "break-word" }}
-                >
-                  {project.description}
-                </Typography>
+                <div>
+                  <Typography
+                    variant="body2"
+                    color="text.secondary"
+                    sx={{ wordWrap: "break-word" }}
+                  >
+                    {project.description}
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="text.secondary"
+                    sx={{ wordWrap: "break-word" }}
+                  >
+                    <Typography color="text.danger">Tech Stack:</Typography>{" "}
+                    {project.TechStack}
+                  </Typography>
+                </div>
               </CardContent>
               <CardActions
                 sx={{
@@ -139,7 +154,7 @@ function Projects() {
                   color="secondary"
                   sx={{ textTransform: "none" }}
                 >
-                  Frontend
+                  GitHub
                 </Button>
               </CardActions>
             </Card>
