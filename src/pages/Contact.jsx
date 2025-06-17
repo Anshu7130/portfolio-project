@@ -11,12 +11,6 @@ import EmailIcon from "@mui/icons-material/Email"; // 📨 icon for warmth
 import { useSnackbar } from "notistack";
 
 export default function Contact() {
-  const { enqueueSnackbar } = useSnackbar();
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    enqueueSnackbar("Message sent successfully!", { variant: "success" });
-  };
-
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -75,7 +69,6 @@ export default function Contact() {
             method="POST"
             data-netlify="true"
             netlify
-            onSubmit={handleSubmit}
             noValidate
             autoComplete="off"
           >
