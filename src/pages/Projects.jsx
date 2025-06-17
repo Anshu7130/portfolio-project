@@ -30,7 +30,7 @@ const projects = [
     image: "/assets/luminaDine.png",
     TechStack: "React, PHP, Bootstrap, REST API, MySQL, JavaScript,",
     live: "#",
-    github: "#",
+    github: "https://github.com/Anshu7130/Lumina-Dine.git",
     imageHeight: { xs: 150, sm: 200, md: 250, lg: 250, xl: 250 },
   },
   {

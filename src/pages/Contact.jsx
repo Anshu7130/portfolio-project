@@ -64,7 +64,6 @@ export default function Contact() {
             method="POST"
             action="/thank-you.html"
             data-netlify="true"
-            autoComplete="off"
           >
             {/* Hidden input for Netlify to recognize the form name */}
             <input type="hidden" name="form-name" value="contact" />
