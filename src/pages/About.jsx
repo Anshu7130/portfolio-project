@@ -27,7 +27,7 @@ export default function About() {
           paragraph
           sx={{  lineHeight: 1.8 }}
         >
-          I’m Anusha Bandarapu, a frontend developer with over 5 years of experience crafting scalable,
+          I’m Anusha Bandarapu, a frontend developer with over 4 years of experience crafting scalable,
           responsive web applications. I’ve worked with companies like Kemper Insurance and TCS (for
           Cardinal Health), building full-stack features using React, Angular, and Spring Boot. I specialize
           in turning complex ideas into smooth, user-friendly interfaces using modern frameworks and design systems.

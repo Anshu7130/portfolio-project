@@ -97,7 +97,7 @@ export default function Home() {
               </Typography>
 
               <Typography variant="body1" sx={{ color: "#cccccc", mt: 2 }}>
-                Passionate Front-End Developer with 5+ years of experience
+                Passionate Front-End Developer with 4+ years of experience
                 building scalable, responsive web applications. Skilled in
                 creating user-centric UI solutions with React.js, Angular, and
                 modern web technologies.
