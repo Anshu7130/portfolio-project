@@ -67,6 +67,7 @@ export default function Contact() {
             component="form"
             name="contact"
             method="POST"
+            action="/thank-you.html"
             data-netlify="true"
             netlify
             noValidate
@@ -78,7 +79,6 @@ export default function Contact() {
               transition={{ duration: 0.4, delay: 0.2 }}
             >
               <input type="hidden" name="form-name" value="contact" />
-              <input type="hidden" name="redirect" value="/thank-you.html" />
               <TextField
                 name="name"
                 fullWidth
