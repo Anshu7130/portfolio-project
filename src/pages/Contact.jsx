@@ -16,6 +16,7 @@ export default function Contact() {
     e.preventDefault();
     enqueueSnackbar("Message sent successfully!", { variant: "success" });
   };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -70,6 +71,10 @@ export default function Contact() {
           {/* Form */}
           <Box
             component="form"
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            netlify
             onSubmit={handleSubmit}
             noValidate
             autoComplete="off"
@@ -79,7 +84,10 @@ export default function Contact() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.2 }}
             >
+              <input type="hidden" name="form-name" value="contact" />
+
               <TextField
+                name="name"
                 fullWidth
                 label="Name"
                 margin="normal"
@@ -101,6 +109,7 @@ export default function Contact() {
             >
               <TextField
                 fullWidth
+                name="email"
                 label="Email"
                 margin="normal"
                 required
@@ -122,6 +131,7 @@ export default function Contact() {
             >
               <TextField
                 fullWidth
+                name="message"
                 label="Message"
                 margin="normal"
                 multiline
