@@ -78,7 +78,7 @@ export default function Contact() {
               transition={{ duration: 0.4, delay: 0.2 }}
             >
               <input type="hidden" name="form-name" value="contact" />
-
+<input type="hidden" name="redirect" value="/thank-you" />
               <TextField
                 name="name"
                 fullWidth
