@@ -1,6 +1,7 @@
 import { Container, Typography, Box, Button, Grid } from "@mui/material";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -108,24 +109,25 @@ export default function Home() {
 
               {/* Buttons */}
               <Box sx={{ mt: 4 }}>
-                <Button
-                  variant="contained"
-                  size="large"
-                  href="/projects"
-                  sx={{
-                    bgcolor: "rgb(51, 92, 103)",
-                    color: "#fff",
-                    px: 4,
-                    py: 1.5,
-                    fontWeight: 600,
-                    mx: 1,
-                    "&:hover": {
-                      bgcolor: "#b87333",
-                    },
-                  }}
-                >
-                  View Projects
-                </Button>
+                <Link to="/projects" style={{ textDecoration: "none" }}>
+                  <Button
+                    variant="contained"
+                    size="large"
+                    sx={{
+                      bgcolor: "rgb(51, 92, 103)",
+                      color: "#fff",
+                      px: 4,
+                      py: 1.5,
+                      fontWeight: 600,
+                      mx: 1,
+                      "&:hover": {
+                        bgcolor: "#b87333",
+                      },
+                    }}
+                  >
+                    View Projects
+                  </Button>
+                </Link>
 
                 <Button
                   variant="outlined"
