@@ -63,100 +63,100 @@ export default function Contact() {
           </Typography>
 
           {/* Form */}
-          <Box
-            component="form"
+          <form
             name="contact"
             method="POST"
             action="/thank-you.html"
             data-netlify="true"
-            netlify
             noValidate
             autoComplete="off"
           >
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: 0.2 }}
-            >
-              <input type="hidden" name="form-name" value="contact" />
-              <TextField
-                name="name"
+            <input type="hidden" name="form-name" value="contact" />
+            <Box>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: 0.2 }}
+              >
+                <TextField
+                  name="name"
+                  fullWidth
+                  label="Name"
+                  margin="normal"
+                  required
+                  variant="outlined"
+                  sx={{
+                    bgcolor: "white",
+                    borderRadius: 1,
+                    input: {
+                      paddingY: 1.5,
+                    },
+                  }}
+                />
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: 0.4 }}
+              >
+                <TextField
+                  fullWidth
+                  name="email"
+                  label="Email"
+                  margin="normal"
+                  required
+                  type="email"
+                  variant="outlined"
+                  sx={{
+                    bgcolor: "white",
+                    borderRadius: 1,
+                    input: {
+                      paddingY: 1.5,
+                    },
+                  }}
+                />
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: 0.6 }}
+              >
+                <TextField
+                  fullWidth
+                  name="message"
+                  label="Message"
+                  margin="normal"
+                  multiline
+                  rows={4}
+                  required
+                  variant="outlined"
+                  sx={{
+                    bgcolor: "white",
+                    borderRadius: 1,
+                  }}
+                />
+              </motion.div>
+              <Button
+                type="submit"
                 fullWidth
-                label="Name"
-                margin="normal"
-                required
-                variant="outlined"
+                variant="contained"
                 sx={{
-                  bgcolor: "white",
-                  borderRadius: 1,
-                  input: {
-                    paddingY: 1.5,
+                  mt: 3,
+                  backgroundColor: "#b87333",
+                  color: "#fff",
+                  fontWeight: 600,
+                  paddingY: 1.5,
+                  borderRadius: "8px",
+                  "&:hover": {
+                    backgroundColor: "#a55f2d",
+                    boxShadow: "0 0 12px #b87333",
                   },
                 }}
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: 0.4 }}
-            >
-              <TextField
-                fullWidth
-                name="email"
-                label="Email"
-                margin="normal"
-                required
-                type="email"
-                variant="outlined"
-                sx={{
-                  bgcolor: "white",
-                  borderRadius: 1,
-                  input: {
-                    paddingY: 1.5,
-                  },
-                }}
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: 0.6 }}
-            >
-              <TextField
-                fullWidth
-                name="message"
-                label="Message"
-                margin="normal"
-                multiline
-                rows={4}
-                required
-                variant="outlined"
-                sx={{
-                  bgcolor: "white",
-                  borderRadius: 1,
-                }}
-              />
-            </motion.div>
-            <Button
-              type="submit"
-              fullWidth
-              variant="contained"
-              sx={{
-                mt: 3,
-                backgroundColor: "#b87333",
-                color: "#fff",
-                fontWeight: 600,
-                paddingY: 1.5,
-                borderRadius: "8px",
-                "&:hover": {
-                  backgroundColor: "#a55f2d",
-                  boxShadow: "0 0 12px #b87333",
-                },
-              }}
-            >
-              Send Message
-            </Button>
-          </Box>
+              >
+                Send Message
+              </Button>
+            </Box>
+          </form>
         </Paper>
       </Container>
     </motion.div>
