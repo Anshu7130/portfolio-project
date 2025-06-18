@@ -132,7 +132,7 @@ export default function Home() {
                 <Button
                   variant="outlined"
                   size="large"
-                  href="/assets/Anusha_Bandarapu_Resume.pdf"
+                  href="/assets/Anusha.Resume.pdf"
                   target="_blank"
                   sx={{
                     borderColor: "#b87333",
