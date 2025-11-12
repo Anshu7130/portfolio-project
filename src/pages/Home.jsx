@@ -23,7 +23,7 @@ export default function Home() {
               }}
             >
               <img
-                src="/assets/developerImage.jpeg"
+                src="/assets/developer.png"
                 alt="Developer Illustration"
                 style={{
                   width: "300px",
@@ -76,7 +76,7 @@ export default function Home() {
                 gutterBottom
                 sx={{ color: "#ffffff", fontWeight: 700 }}
               >
-                Hi, I'm Anusha Bandarapu
+                Hi, I'm Anusha 
               </Typography>
 
               <Typography
